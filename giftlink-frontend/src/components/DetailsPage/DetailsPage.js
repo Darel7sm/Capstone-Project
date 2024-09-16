@@ -31,6 +31,7 @@ function DetailsPage() {
                 setLoading(false);
             }
         };
+        }
 
         fetchGift();
 
