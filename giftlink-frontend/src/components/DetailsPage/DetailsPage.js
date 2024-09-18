@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './DetailsPage.css';
+import {urlConfig} from '../../config';
 
 function DetailsPage() {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ function DetailsPage() {
         if (!authenticationToken) {
 			// Task 1: Check for authentication and redirect
             navigate('/app/login');
-
+        }
         // get the gift to be rendered on the details page
         const fetchGift = async () => {
             try {
@@ -31,9 +32,10 @@ function DetailsPage() {
                 setLoading(false);
             }
         };
-        }
-
         fetchGift();
+        
+
+        
 
 		// Task 3: Scroll to top on component mount
 		window.scrollTo(0, 0);
