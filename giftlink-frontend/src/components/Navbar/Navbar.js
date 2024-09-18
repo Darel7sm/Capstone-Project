@@ -11,8 +11,13 @@ export default function Navbar() {
                     <li className="nav-item">
                     <a className="nav-link" href="/home.html">Home</a> {/* Link to home.html */}
                     </li>
+
                     <li className="nav-item">
-                        <a className="nav-link" href="/app">Gifts</a> {/* Updated Link */}
+                        <a className="nav-link" href="/app">Gifts</a> {/* Link to gifts*/}
+                    </li>
+
+                    <li className="nav-item">
+                    <Link className="nav-link" to="/app/search">Search</Link>
                     </li>
                     
                 </ul>
